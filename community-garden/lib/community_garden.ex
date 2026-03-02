@@ -5,7 +5,7 @@ defmodule Plot do
 end
 
 defmodule CommunityGarden do
-  def start(opts \\ []) do
+  def start(_opts \\ []) do
     Agent.start(fn -> %{plots: [], index: 0} end)
   end
 
